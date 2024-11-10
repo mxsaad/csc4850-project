@@ -5,7 +5,7 @@ FROM jupyter/scipy-notebook:latest
 WORKDIR /home/jovyan/work
 
 # Install any additional dependencies here (example: scikit-learn)
-RUN pip install scikit-learn
+RUN pip install pandas numpy scikit-learn seaborn
 
 # Expose the default Jupyter port
 EXPOSE 8888
