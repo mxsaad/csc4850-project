@@ -1,11 +1,12 @@
-version: '3'
+version: "3"
 
 services:
   jupyter:
     build: .
     container_name: jupyter_container
     volumes:
-      - ./notebooks:/home/jovyan/work
+      - ./notebooks:/home/jovyan/work # Already mounting notebooks
+      - ./data:/home/jovyan/data # Mount the data directory
     ports:
       - "8888:8888"
     environment:
