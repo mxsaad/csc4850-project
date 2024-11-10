@@ -5,9 +5,9 @@ services:
     build: .
     container_name: jupyter_container
     volumes:
-      - ./notebooks:/home/jovyan/work # Already mounting notebooks
-      - ./data:/home/jovyan/data # Mount the data directory
+      - .:/home/jovyan/project
     ports:
       - "8888:8888"
     environment:
       - JUPYTER_ENABLE_LAB=yes
+    working_dir: /home/jovyan/project
