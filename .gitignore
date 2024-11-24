@@ -1,0 +1,8 @@
+# Ignore Jupyter Notebook checkpoint folders
+.ipynb_checkpoints/
+
+# Add other files/folders you want to ignore (e.g., data files, environment settings, etc.)
+*.pyc
+*.pyo
+__pycache__/
+
